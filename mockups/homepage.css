@@ -1,0 +1,308 @@
+.headerContainer{
+    width: 60%;
+}
+
+.topHeader{
+
+    background-color: rgb(10, 7, 7);
+    height: 90px;
+    padding-top: 10px;
+}
+
+.blogTitle{
+	font-family: Verdana,Geneva,sans-serif; 
+    font-size: 3em;
+
+    color: white;
+}
+
+.searchCol{
+    text-align: end;
+    padding-top: 2%;
+    color: white;
+}
+
+.iconCol{
+    padding-top: 2%;
+    color: white;
+}
+.searchP{
+    margin-right: 6px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.titleHeader{
+    padding-top: 10%
+
+}
+.Xicons{
+    font-size: 30px; margin-right: 20px
+}
+
+.navContainer{
+
+    width: 60%;
+    margin-bottom: 40px;
+}
+.listRow{
+
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 10%;
+}
+.listRowItem{
+
+    margin-right: 30px; list-style: none;
+
+}
+
+.composedRow{
+    width: 2000px;
+    overflow: hidden;
+
+}
+.card{
+    height: 500px;
+   
+    
+}
+.right-card{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    
+    width: 300px; /* Box dimensions */
+    height: 250px; 
+    margin-bottom: 5px;
+    border-radius: 4px; /* Styling */
+    transition: box-shadow 0.56s ease-in-out; /* Animation */
+    /* background-color: rgba(0,0,0,.2); /* for debugging */
+  }
+  /* Shows an outer shadow */
+  .card:hover{ /* Just for styling */
+    cursor: pointer;
+    box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+  }
+
+  /* Cards titles styling
+------------------------------------------ */
+.card__title{ /* Just for styling */
+    align-self: flex-end; padding: 0.5rem;
+    color: rgba(255,255,255,.90); font-size: 2rem;
+    line-height: 1;font-weight: 600; }  
+
+/* Styles for:
+** - Using IMG tag inside a container
+------------------------------------------ */
+/* The image container */
+.card__thumbnail{
+  position: relative;
+  overflow: hidden;  
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  
+  width: 300px; /* Thumbnail dimensions. */
+  height: 100%; /*** Change the height to make the image smaller ***/
+  /* background-color: rgba(0,0,0,.2);  /* for debugging */
+  
+}
+/* Sets the image dimensions */
+.card__thumbnail > img{ /* Tip: use 1:1 ratio images */
+  height: 100%; /* or width when img.width > img.height */ 
+}  
+/* Styles the title inside the img container */
+.card__thumbnail > .card__title{ /* Just for styling */
+  position: absolute; left: 0; bottom: 0; }
+
+
+.rightCard1{
+    height: 250px;
+    object-fit: contain;
+    
+}
+.rightCardBtn{
+    width: 40%;
+    margin-left: 10px;
+    border-radius: 0;
+    color: white;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.rightCardBtn p{
+    font-size: small;
+    color: white;
+    font-weight: bolder;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+.leftCard{
+
+   max-width: 100%;
+   max-height: 100%;
+   
+}
+
+.leftCardBtn{
+    width: 30%;
+    margin-left: 10px;
+    border-radius: 0;
+    color: white;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 25%;
+}
+
+.leftCardBtn p{
+    font-size: small;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+.leftCardTitle{
+    font-family: 'Anton', sans-serif;    margin-left: 10px;
+    font-weight: bolder;
+    color: white;
+}
+.leftImg{
+
+    max-width:100%;
+max-height:100%;
+}
+.postTitle{
+    color: white;
+
+    margin-left: 10px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.postMeta{
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width:500px) {
+    
+    .iconCol{
+        display: none;
+    }
+    .card{
+        height: 320px;
+        
+    }
+    #searchSpan{
+
+        font-size: x-small;
+    }
+    .searchCol{
+        padding-top: 4%
+    }
+    .searchP{
+        display: none;
+        
+    }
+    .leftCard{
+        height: 360px;
+    }
+
+    .composedRow{
+        width: 100%;
+    }
+    .card__thumbnail{
+        position: relative;
+        overflow: hidden;  
+        display: flex;
+        justify-content: center; /* horizontal center */
+        align-items: center; /* vertical center */
+        
+        width: 410px; /* Thumbnail dimensions. */
+        height: 100%; /*** Change the height to make the image smaller ***/
+        /* background-color: rgba(0,0,0,.2);  /* for debugging */
+        
+      }
+      .composedRow{
+        width: 350px;
+        overflow: hidden;
+    }
+    .leftCardBtn{
+        width: 75%;
+        margin-left: 10px;
+        border-radius: 0;
+        color: white;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-top: 35%;
+    }
+    .leftCardTitle{
+        font-family: 'Anton', sans-serif;    margin-left: 10px;
+        font-weight: bolder;
+        color: white;
+        font-size: 25px;
+        width: 80%;
+    }
+}
+@media screen and (min-width:501px) and (max-width:840px){
+
+    .listRow{
+        font-size: 13px;
+
+        width: 70%;
+        margin-left: 7%;
+        padding-left: 10%;
+    }
+    .listRowItem{
+        margin-right: 15px;
+    }
+    
+    .composedRow{
+        width: 800px;
+        overflow: hidden;
+    
+    }
+    .leftCardBtn{
+        width: 75%;
+        margin-left: 10px;
+        border-radius: 0;
+        color: white;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-top: 75%;
+    }
+
+}
+
+@media screen and (min-width:841px) and (max-width:1100px) and (max-height:1400px){
+    
+    .listRow{
+        font-size: 19px;
+
+        width: 70%;
+        margin-left: 12%;
+        padding-left: 10%;
+    }
+    .listRowItem{
+        margin-right: 25px;
+    }
+    .composedRow{
+        width: 1300px;
+        overflow: hidden;
+    
+    }
+    .leftCardBtn{
+        width: 40%;
+        margin-left: 10px;
+        border-radius: 0;
+        color: white;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-top: 45%;
+    }
+  
+}
